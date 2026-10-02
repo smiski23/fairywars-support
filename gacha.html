@@ -1,0 +1,44 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>妖精ガチャ 提供割合｜フェアリーウォーズ</title><link rel="stylesheet" href="style.css"></head><body>
+<!-- アプリ内と公開ページで共通。原本は fairy-wars-app/public/legal/ （npm run site:sync で公開用へコピー）
+     数値は functions/gamedata.js（サーバーの抽選）と一致させること。site:sync が data-* の値を gamedata.js と照合し、ずれていたら止まります。 -->
+<header class="site"><a class="brand" href="index.html">フェアリーウォーズ</a><nav><a href="support.html">サポート</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a><a href="gacha.html">ガチャ提供割合</a><a href="tokushoho.html">特定商取引法に基づく表記</a><a href="shikin.html">資金決済法に基づく表示</a></nav></header>
+<main id="gacha-rates" data-ssr="3" data-sr="17" data-r="80" data-pity="60" data-cost1="30" data-cost10="300" data-pool-ssr="shirayuki,ningyo,ibara" data-pool-sr="oyayubi,tsuru,pinocchio" data-pool-r="match,ousama">
+<h1>妖精ガチャ 提供割合</h1>
+<p>対象：フェアリーウォーズ「妖精ガチャ」（ショップ画面）　／　最終更新：2026年9月27日</p>
+<p>1回30個・10連300個の宝石で引けます。抽選はすべてサーバーで行います。</p>
+
+<h2>レア度ごとの提供割合</h2>
+<div class="table-wrap"><table>
+<tr><th>レア度</th><th class="num">提供割合</th><th>出現する仲間（同じレア度の中では等確率）</th></tr>
+<tr><td>SSR</td><td class="num">3.000%</td><td>白雪姫、人魚姫、いばら姫</td></tr>
+<tr><td>SR</td><td class="num">17.000%</td><td>親指姫、鶴の娘、ピノキオ</td></tr>
+<tr><td>R</td><td class="num">80.000%</td><td>マッチ売りの少女、はだかの王様</td></tr>
+</table></div>
+
+<h2>仲間ごとの提供割合</h2>
+<div class="table-wrap"><table>
+<tr><th>レア度</th><th>仲間</th><th class="num">通常の1回</th><th class="num">10連の確定枠</th></tr>
+<tr><td>SSR</td><td>白雪姫</td><td class="num">1.000%</td><td class="num">1.000%</td></tr>
+<tr><td>SSR</td><td>人魚姫</td><td class="num">1.000%</td><td class="num">1.000%</td></tr>
+<tr><td>SSR</td><td>いばら姫</td><td class="num">1.000%</td><td class="num">1.000%</td></tr>
+<tr><td>SR</td><td>親指姫</td><td class="num">5.667%</td><td class="num">32.333%</td></tr>
+<tr><td>SR</td><td>鶴の娘</td><td class="num">5.667%</td><td class="num">32.333%</td></tr>
+<tr><td>SR</td><td>ピノキオ</td><td class="num">5.667%</td><td class="num">32.333%</td></tr>
+<tr><td>R</td><td>マッチ売りの少女</td><td class="num">40.000%</td><td class="num">0%</td></tr>
+<tr><td>R</td><td>はだかの王様</td><td class="num">40.000%</td><td class="num">0%</td></tr>
+</table></div>
+<p class="note">表示は小数第4位を四捨五入しています。</p>
+
+<h2>確定と天井</h2>
+<ul>
+<li><b>10連のSR以上確定</b>：10連で1〜9回目がすべてRだった場合、10回目はSR以上になります（上の表の「10連の確定枠」の割合。SSR 3%・SR 97%）。</li>
+<li><b>天井</b>：SSRが出ないまま60回目になると、60回目は必ずSSRになります（SSRの3人から等確率）。SSRが出た時点で回数は0に戻ります。天井までの残り回数はガチャの画面に表示しています。回数は1回引き・10連をまとめて数え、アカウントの引き継ぎ後も引き継がれます。</li>
+</ul>
+
+<h2>すでに持っている仲間が出たとき</h2>
+<p>その仲間の★が1つ上がります（体力と攻撃力が★1つにつき8%アップ、最大★5）。★5の仲間が出た場合は、星のかけら（SSR 20個・SR 6個・R 2個）に変わります。</p>
+
+<p class="note">提供割合を変更する場合は、事前にアプリ内でお知らせし、このページを更新します。</p>
+</main>
+<footer class="site">© Smidem</footer>
+</body></html>
